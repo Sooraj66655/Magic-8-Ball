@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+h1 {
+	margin-left: 10%;
+	text-align: center;
+	font-size: 40px;
+	color: #123B11;
+	font-variant-caps: all-petite-caps;
+	animation: head 5s infinite;
+}
+
+@keyframes head {
+	from {
+		left: 0px;
+	}
+	to {
+		right: 200px;
+	}
+}
+
+h3 {
+	font-size: 7rem;
+	text-align: center;
+	font-family: 'Codystar';
+	color: #123B11;
+	font-variant-caps: all-petite-caps;
+	font-weight: bold;
+	-webkit-animation: glow 2s ease-in-out infinite alternate;
+	-moz-animation: glow 2s ease-in-out infinite alternate;
+	animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	from {
+		color: #fff;
+		text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+	}
+	to {
+		color: gray;
+		text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+	}
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px !important;
+	font-variant-caps: all-petite-caps;
+}
+
+h4 {
+	text-align: center;
+	color: #010545 !important;
+	font-size: 25px;
+}
+
+video {
+	width: 100%;
+}
+
+.inp {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2%;
+	padding-bottom: 5%;
+}
+
+body {
+	background-color: #F2F2F0;
+}
+
+.name {
+	background: transparent;
+	border-bottom: 2px solid #123B11!important;
+	font-size: 45px;
+	width: 40%;
+	height: auto;
+	border: none;
+	outline: none;
+}
+
+.btn {
+	float: right;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	width: 30%;
+	font-size: 25px;
+	font-weight: bold;
+	height: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #DA4204;
+}
+
+.btn:hover {
+	color: white;
+	font-size: 30px;
+	background-color: #030242;
+}
+
+#mainWelcomeDiv {
+	display: none;
+}
+
+.welcome {
+	width: 80%;
+	margin-left: 10%;
+	background-image: url("future.gif");
+	background-blend-mode: overlay;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
+.welcomeMessage {
+	width: 100%;
+	height: auto;
+	color: red;
+}
+
+#message {
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+.btnnext {
+	border: none;
+	outline: none;
+	width: 40%;
+	background-color: #FCB569 !important;
+	margin-top: 2%;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#QuestionAnsDiv {
+	display: none;
+	height: auto;
+	padding-bottom: 30%;
+}
+details > p {
+  background-color: #fff;
+  padding: 15px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+.Q1 {
+	margin-top: 4%;
+}
+
+details {
+	margin-bottom: 8%;
+}
+
+summary {
+	font-size: 30px;
+}
+
+.res {
+	font-size: 30px;
+	color: #036D23;
+}
+
+p {
+	color: #B10303;
+}
+
+#cancel {
+	display: none;
+	background-blend-mode: overlay;
+	background-image: url("a.jpg");
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	padding-bottom: 6%;
+	padding-top: 4%;
+}
+
+.Thank {
+	text-align: center;
+	font-size: 90px;
+	padding-top: 4%;
+	font-family: "Sofia";
+}
+
+.revisit {
+	color: yellow!important;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Sofia";
+}
+
+.cancelBtn {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	height: auto;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #040133;
+	border-radius: 100px;
+	padding: 1%;
+	outline: none;
+
+}

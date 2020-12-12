@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Magic Eight Ball Task
+        </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    <body>
+        <!--------------------------------Header Section Lodo and Quote-------------------------->
+        <div class="header">
+            <div style="float: left;width: 40%;">
+                <img src="ask.png" height="150">
+            </div>
+            <div style="float: right;width: 60%;">
+                <h1>
+                    The magic Ball it's used to tell someone’s predictable fortune&#127759;
+                </h1>
+            </div>
+        </div>
+        <!--------------------------------Banner And Name Enter Section----------------------------->
+        <div id="topDiv">
+            <a href="https://en.wikipedia.org/wiki/Magic_8-Ball">
+                <video loop>
+                    <source src="Ball.mp4" type="video/mp4" />
+                </video>
+            </a>
+            <div class="inp" id="inp">
+                <h3>
+                    Have A Question ?
+                </h3>
+                <h4>
+                    If You Have Question Enter Your Name And  Go Ahead....
+                    <br>
+                    it's all About Fun&#128541;
+                </h4>
+                <i class="fa fa-user" style="font-size: 50px;color:#123B11;">
+                </i>
+                &nbsp;
+                <input type="text" class="name" id="name" placeholder="Name....">
+                <button class="btn" id="clickbtn" onclick="Future();">Click Here</button>
+            </div>
+        </div>
+        <!---------------------------After Enter Name And Click Welcome Section--------------->
+        <div id="mainWelcomeDiv">
+            <div class="welcomeMessage">
+                <h2 id="message">
+                    Welcome
+                </h2>
+                <h4>
+                    <span style='font-size:100px;text-align: center;' onclick="ConfirmBtn();">&#127921;</span>
+                </h4>
+            </div>
+        </div>
+        <!------------------------------------Answer Prediction By Questions----------------------->
+        <div id="QuestionAnsDiv">
+        	<h1>You Question has Been Shown Below...</h1>
+            <div style="float: left; width: 45%; margin-left: 4%;">
+                <details class="Q1" id="first" ontoggle="marrigePredicated()">
+                    <summary >
+                        1. When will I get married and to whom?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="marrige">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="twinPredicated()">
+                    <summary>
+                        2. When will I get twin kids?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="twin">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="millionairePredicated()">
+                    <summary>
+                        3. When will I become a millionaire?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="millionaire">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="wifePredicated()">
+                    <summary>
+                        4. How often will i get married?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="wife">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="livePredicated()">
+                    <summary>
+                        5. Where will i live after 5 years?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="live">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="dreamPredicated()">
+                    <summary>
+                        6. Who will come in my dream today?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="dream">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="placePredicated()">
+                    <summary>
+                        7. Where is a good place (city/country) for me to live or work?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="place">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="relationshipPredicated()">
+                    <summary>
+                        8. How can I improve my relationship with my partner/family/boss/colleagues, etc…?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="relationship">
+                    </p>
+                </details>
+            </div>
+            <div style="float: right; width: 45%;margin-left: 5%;">
+                <details class="Q1" ontoggle="kiddsPredicated()">
+                    <summary>
+                        9. Will My kids have a Girlfriend / Boyfriend?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="kidds">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="diePredicated()">
+                    <summary>
+                        10. When will I get died and How?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="die">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="bornSeasonPredicated()">
+                    <summary>
+                        11. In which season were you born?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="bornSeason">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="financePredicated()">
+                    <summary>
+                        12. What can I do to increase my finances?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="finance">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="jobTypePredicated()">
+                    <summary>
+                        13.What type of job should I pursue? What career am I most suited for?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="jobType">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="workingPeriodPredicated()">
+                    <summary>
+                        14. How many more years will I be working?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="workingPeriod">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="tourPredicated()">
+                    <summary>
+                        15. What Will I go to World Tour?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="tour">
+                    </p>
+                </details>
+                <br>
+                <details ontoggle="fourWheelerPredicated()">
+                    <summary>
+                        16. Can I buy Scropio This Year?
+                    </summary>
+                    <p>
+                        - by Reference this All Things only Predicted.
+                    </p>
+                    <p class="res" id="fourWheeler">
+                    </p>
+                </details>
+            </div>
+        </div>
+        <!------------------------------------------Concel Section------------------------>
+        <div id="cancel">
+            <p class="Thank">
+                Thank You For Visiting Us!
+            </p>
+            <p class="revisit">
+                If You Want to visit Fortune Prediction Click on 8 Ball Below!!
+            </p>
+            <h4>
+                <span style='font-size:100px;text-align: center;' onclick="ConfirmBtn2();">&#127921;</span>
+            </h4>
+        </div>
+        <button class="cancelBtn" onclick="cancel();">&#10060;</button>
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+</html>
