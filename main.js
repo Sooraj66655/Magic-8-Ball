@@ -42,7 +42,6 @@ function ConfirmBtn2() {
 /*****************************************Question 1 Prediction Answer**************************/
 function marrigePredicated() {
 	var first = document.getElementById("first").value;
-	alert(first);
 	var marrige = ["When You have Crossed 21 Years then You will become a Husband of a Girl..😝",
 		"it will be late not at time Please wait..", "It's Not Predicatble By Me Sorry boss You Shuld Ask to Alexa..", "Never! You Will live Whole life Without marrige..",
 		"My sources say no", "Signs point to yes", "It is certain", "Reply hazy try again"
